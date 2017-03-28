@@ -1,0 +1,73 @@
+/*布局*/
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+/*大的框架*/
+#calculator{
+    border-color: white;
+    border-style: solid;
+    width: 476px;
+    height: 453px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+/*文本显示框*/
+#text{
+    font-weight: normal;
+    font-size: 60px;
+    text-align: right;
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    margin: 16px 20px 24px 20px ;
+}
+/*按钮*/
+.button {
+    font-size: 30px;
+    display: inline-block;
+    width: 90px;
+    height: 65px;
+    background-color: white;
+    border: 1px solid white;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 55px;
+    box-shadow: 3px 3px 5px white;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#buttonarea{
+    overflow: hidden;
+    width: 447px;
+    height: 361px;
+    margin: 70px 8px 21px 18px;
+}
+button{
+    outline: none;
+}
+
+/*按钮动画*/
+.button:hover {
+    border: 1px solid #808080;
+    box-shadow: 3px 3px 5px #888888;
+    background-color: #F9F9F9;
+}
+#equal:hover{
+    background-color: pink;
+}
+.symbol:hover{
+    background-color: #FCE331;
+}
+/*字体的改变*/
+.change6{
+    font-size: 50px !important;
+}
+.change8{
+    font-size: 30px;
+}

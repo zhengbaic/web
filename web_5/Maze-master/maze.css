@@ -1,0 +1,147 @@
+﻿body {
+    position: relative;
+    font-family: 'Century Gothic';
+    background-color: #EAEAEA;
+    margin: 0;
+}
+
+#message {
+    height: 40px;
+}
+
+#message p {
+    margin: 0;
+    font-size: 24px;
+}
+
+#introduction {
+    overflow: hidden;
+}
+
+#introduction p {
+    font-size: 24px;
+}
+
+#cheat_no, #win_no, #lost_no {
+    display: none;
+}
+
+#cheat_yes, #win_yes {
+    text-align: center;
+    display: block;
+}
+
+#lost_yes {
+    color: red;
+    text-align: center;
+    display: block;
+}
+
+#maze_box {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: 750px;
+    height: 500px;
+}
+
+.walls {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    float: left;
+    background-color: grey;
+}
+
+.wall_onmove {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    float: left;
+    background-color: red;
+}
+
+#start {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    float: left;
+    background-color: #83FF82;
+    text-align: center;
+    font-weight: bold;
+}
+
+#end {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    float: left;
+    background-color: #8684FF;
+    text-align: center;
+    font-weight: bold;
+}
+
+.path {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+p, h1 {
+    font-weight: normal;
+    text-align: center;
+}
+
+#wall_example {
+    width: 100px;
+    height: 25px;
+    background-color: grey;
+    margin: 0 auto;
+}
+
+#guide {
+    width: 575px;
+    margin: 0 auto;
+}
+
+#guide p {
+    text-align: left;
+}
+
+.onstart {
+    cursor: url(img/cursor.png) 8 8, pointer;
+}
+
+.mouse_off {
+    visibility: hidden;
+}
+
+.mouse_on {
+    position: absolute;
+    visibility: visible;
+    width: 16px;
+    height: 16px;
+    background-image: url(img/cursor_trade.png);
+    background-repeat: no-repeat;
+    cursor: url(img/cursor.png) 8 8, pointer;
+}
+
+#mouse_off {
+    visibility: hidden;
+}
+
+#mouse_on {
+    position: absolute;
+    visibility: visible;
+    width: 16px;
+    height: 16px;
+    background-image: url(img/cursor_trade.png);
+    background-repeat: no-repeat;
+    cursor: url(img/cursor.png) 8 8, pointer;
+}

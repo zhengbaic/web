@@ -1,0 +1,113 @@
+﻿body {
+    font-family: 'Century Gothic';
+}
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 24px;
+}
+
+p {
+    text-align: center;
+}
+
+#instruction {
+    width: 670px;
+    margin: auto auto;
+    text-align: left;
+    font-family: 'Courier New';
+}
+
+#inst {
+    font-size: 12px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+ol {
+    padding-left: 70px;
+    font-size: 16px;
+}
+
+#message {
+    width: 320px;
+    margin: auto auto;
+    overflow: hidden;
+}
+
+span {
+    float: right;
+}
+
+#time, #scores {
+    width: 40px;
+}
+
+#game_box {
+    width: 480px;
+    height: 480px;
+    margin: 40px auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.hole, .error, .target {
+    margin: 0.5px;
+    float: left;
+    width: 39px;
+    height: 39px;
+    border-radius: 5px;
+}
+
+#start_on {
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    margin: 0;
+    display: block;
+}
+
+#start_off, #tips_off {
+    display: none;
+}
+
+#tips {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(img/three.png);
+}
+
+.hole {
+    background-color: grey;
+}
+
+.error {
+    background-color: red;
+    transition-duration: 0.2s;
+}
+
+.target {
+    background-color: black;
+}
+
+#error {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    display: block;
+}
+
+#error_off {
+    display: none;
+}

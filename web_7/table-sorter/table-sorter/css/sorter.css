@@ -1,0 +1,36 @@
+html, body{
+    font-family: "Century Gothic", sans-serif;
+}
+table{
+    width:500px;
+    transition-duration: 0.5s;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 0;
+    border: 1px solid lightgray;
+}
+th{
+    text-align: left;
+    color: white;
+    background-color: #01197C;
+}
+th img{
+    float:right;
+}
+.alternate{
+    background-color: lightgray;
+}
+.up{
+    background-image: url(../image/ascend.png);
+    background-color: #A4B0FC;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.down {
+    background-image: url(../image/descend.png);
+    background-color: #A4B0FC;
+    background-repeat: no-repeat;
+    background-position: right;
+}

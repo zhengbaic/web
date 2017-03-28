@@ -1,0 +1,107 @@
+/*大的布局*/
+html, body{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    font-family: "Century Gothic", sans-serif;
+}
+/*游戏box的样式*/
+#game{
+    left: 40%;
+    top: 10%;
+    position: absolute;
+    margin: 0 auto;
+    width: 368px;
+    height: 368px;
+    overflow: hidden;
+}
+/*每个拼图*/
+.puzzle{
+    transition-duration: 1s;
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    background-image: url("../image/True Colors_2913705813975955~1.png");
+    width: 90px;
+    height: 90px;
+    border: 1px solid #eee;
+}
+/*空白块*/
+.blank{
+    transition-duration: 1s;
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    width: 92px;
+    height: 92px;
+}
+/*当鼠标聚焦拼图时动画*/
+.puzzle:hover{
+    transition-duration: 0.5s;
+    width: 92px;
+    height: 92px;
+}
+/*每个拼图对应的样式*/
+.one{ left: 0; top: 0; }
+.two{left: 25%;top: 0;  }
+.three{left: 50%; top: 0;}
+.four{left: 75%; top: 0;}
+.five{ left: 0; top: 25%; }
+.six{left: 25%;top: 25%;  }
+.seven{left: 50%; top: 25%;}
+.eight{left: 75%; top: 25%;}
+.nine{ left: 0; top: 50%; }
+.ten{left: 25%;top: 50%;  }
+.eleven{left: 50%; top: 50%;}
+.twelve{left: 75%; top: 50%;}
+.thirteen{ left: 0; top: 75%; }
+.fourteen{left: 25%;top: 75%;  }
+.fifteen{left: 50%; top: 75%;}
+.sixteen{left: 75%; top: 75%;}
+#one{background-position: 0 0;}
+#two{background-position: 33% 0;}
+#three{background-position: 66% 0;}
+#four{background-position: 100% 0;}
+#five{background-position: 0 33%;}
+#six{background-position: 33% 33%;}
+#seven{background-position: 66% 33%;}
+#eight{background-position: 100% 33%;}
+#nine{background-position: 0 66%;}
+#ten{background-position: 33% 66%;}
+#eleven{background-position: 66% 66%;}
+#twelve{background-position: 100% 66%;}
+#thirteen{background-position: 0 100%;}
+#fourteen{background-position: 33% 100%;}
+#fifteen{background-position: 66% 100%;}
+#sixteen{}
+/*开始按钮*/
+#start{
+    border: none;
+    box-shadow: 3px 3px 5px #888888;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    position: absolute;
+    top: 55%;
+    left:47%;
+    width: 100px;
+    height: 30px;
+    background-color: #87CEFA	;
+}
+/*双击后出现的数字样式*/
+.double_click{
+    text-align: center;
+    color: black;
+    font-size: 80px;
+}
+/*提示*/
+#hint {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+    top: 70%;
+    left:40%;
+    color: black;
+    font-size: large;
+}

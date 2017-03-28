@@ -1,0 +1,89 @@
+/*大布局*/
+body {
+    font-family: 'Century Gothic', sans-serif;
+    background-color: white;
+    margin: 0;
+}
+/*标题以及提示的样式*/
+h1{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+#head1, #head2, #remind{
+    margin: 0;
+    text-align: center;
+}
+#head1 p, #head2 p{
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-size: larger;
+}
+#head2{
+    margin: auto;
+    width: 100%;
+    height: 30px;
+}
+/*最后的remind样式*/
+#remind{
+    font-size: larger;
+}
+#example{
+    width: 100px;
+    height: 25px;
+    background-color: grey;
+    margin: 0 auto;
+}
+/*maze里的样式*/
+#maze{
+    margin: 0 auto;
+    height: 400px;
+    width : 600px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+/*wall是墙 path是可走路径*/
+.wall, .path, #start, #end{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    font-size: 45px;
+}
+.path{
+    background-color: white;
+}
+.wall{
+    background-color: lightgray;
+}
+#start{
+    background-color: #83FF82;
+}
+#end{
+    background-color: #8684FF;
+}
+/*失败时墙壁特效*/
+.wall_on{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-color: red;
+}
+/*鼠标特效*/
+.start {
+    cursor: url(../image/boom.png) 15 15,pointer;
+}
+.win{
+    cursor: url(../image/star.png)  15 15,pointer;
+}
+.lost{
+    cursor: url(../image/boom_error.png) 15 15, pointer;
+}
+
+
+
+
+

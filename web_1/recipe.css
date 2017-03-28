@@ -1,0 +1,44 @@
+body{
+}
+div{
+	background-image: url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+	font-size: 11pt;
+	background-color: white;
+	width: 1024px;
+	height:768px;
+	background-position:center;
+	background-attachment:fixed;
+}
+h1, h2{
+	color:  #A4A400;
+	letter-spacing: 0.2em;
+	background-color: #F0F0F0;
+	font-family: Century Gothic, Futura, Verdana,sans-serif;
+	font-size: 18pt;
+	text-align:left;
+	font-weight: normal;
+	text-decoration:underline;
+}
+h1{
+	font-size: 22pt;
+	font-weight: bold;
+	text-align:center;
+}
+p,ul,ol {
+	color: #404040;
+	font-size: 11pt;
+	font-family: Georgia, Garamond,serif;
+}
+link{
+	color:  #A4A400;
+}
+blockquote{
+	font-style: italic;
+	background-color: #FFFFC8;
+}
+a{
+	color:  #A4A400;
+}
+ul{
+	list-style-image: url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");
+}
