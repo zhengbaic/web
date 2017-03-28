@@ -1,0 +1,129 @@
+body{
+    background: url("image/background.png");
+    font-family: Verdana, Tahoma,sans-serif;
+    font-size: 8pt;
+    padding: 0;
+    margin: 0;
+}
+/*横幅*/
+div#banner {
+    background: url("image/bannerbackground.png") repeat-x;
+}
+/*大标题*/
+h1{
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-align: center;
+}
+/*主块*/
+#page{
+    width: 800px;
+    margin: auto;
+    border: 4px gray solid;
+    overflow: hidden;
+}
+
+/*右边*/
+#generalreview{
+    float: right;
+    width:250px;
+    background-color:  #A2B964;
+    padding-bottom: 10px;
+    font-size: 8pt;
+    font-family: Arial,sans-serif;
+}
+/*右忍者神龟电影图*/
+#pciture{
+    margin-bottom: 0;
+}
+/*定义*/
+dt {
+    font-size: 8pt;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    margin-top: 1em;
+}
+dl {
+    font-size: 8pt;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/*左边*/
+#comment{
+    float:left;
+    width:550px;
+}
+/*左边块标题*/
+#head{
+    background: url("image/rottenbackground.png") repeat-x;
+    height: 83px;
+}
+/*32%*/
+#rating{
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    vertical-align: 15%;
+}
+/*88reviews total*/
+#review{
+    font:8pt white;
+    color: white;
+    vertical-align: 100%;
+    font-family: Verdana, Tahoma,sans-serif;
+}
+/*评论左边块*/
+#left{
+    margin-right: 2%;
+    margin-left: 2%;
+    float: left;
+    width: 47%
+}
+/*评论右边块*/
+#right{
+    margin-right: 2%;
+    float: right;
+    width: 47%
+}
+/*引用*/
+.q{
+     font-weight: bold;
+     font-size: 8pt;
+     background-color: #E1D697;
+     border: 2px gray solid;
+     padding: 8px;
+     overflow: hidden;
+ }
+/*评论人物的身份用斜体*/
+.p{
+    font-style: italic;
+    margin-bottom: 3em;
+}
+/*评论里面的番茄跟人物头像*/
+.in{
+    float: left;
+    overflow: hidden;
+    margin-right: 5px;
+}
+/*人物介绍不用斜体*/
+.person{
+    font-style: normal;
+}
+
+/*下面的东东*/
+#bottom{
+    text-align: center;
+    margin-bottom: 0;
+    background-color: #A2B964;
+    clear: right;
+    padding: 5px;
+}
+#validator{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+

@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title User Page
+    link(rel="stylesheet", type="text/css", href="/stylesheets/user.css")
+    link(rel="icon", href="favion.ico")
+  body
+    h1 Welcome
+    #box
+      #logo
+      form(action="/signout", method="GET")
+        .inputcontainer
+          input(type="text", name="Username", disabled="disabled", value="用户名：#{user.Username}")
+        .inputcontainer
+          input(type="text", name="Schoolid", disabled="disabled", value="学号：#{user.Schoolid}")
+        .inputcontainer
+          input(type="text", name="Phone", disabled="disabled", value="电话：#{user.Phone}")
+        .inputcontainer
+          input(type="text", name="Email", disabled="disabled", value="邮箱：#{user.Email}")
+        input(type="submit", value="退出登录")
+
+        p #{message}
+

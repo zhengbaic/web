@@ -1,0 +1,229 @@
+/*body的长宽*/
+body{
+    height: 800px;
+    width: 100%;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+}
+/*将列表的样式改为none*/
+li{
+    list-style-type: none;
+}
+/*info-bar的样式*/
+/*调整info-bar的列表*/
+#info-bar ul{
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/*列表数字位置*/
+#info-bar li span{
+    vertical-align: 6px;
+}
+/*列表图片位置*/
+#info-bar li img{
+    width: 25px;
+    height: 25px;
+    margin: 4px 8px 0 4px;/*up right down left*/
+}
+/*前两个列表*/
+.page{
+    color: white;
+    display: block;
+}
+/*对评论数的着重*/
+.comment{
+    font-size: 30px;
+    font-weight: bold;
+}
+#info-bar .comment img{
+    width:30px;
+    height: 30px;
+    margin-left: 0;
+    margin-right: 13px;
+}
+#info-bar .user img{
+    margin-left: 0;
+}
+/*后两个列表的inline显示*/
+.mine{
+    font-size: larger;
+    color: #079E6E;
+    display: inline;
+    font-weight: bold;
+}
+/*control-ring-container的样式*/
+/*将所有小圆集中在icon的位置上 并设置样式*/
+#control-ring-container li{
+    background-color: gray;
+    text-align: center;
+    position: absolute;
+    left:725px;
+    bottom: 75px;
+}
+/*所有小圆的形状*/
+#control-ring-container .button{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*设置各个小圆的背景*/
+.mask {
+    background-image: url(assets/images/nomask.png);
+}
+
+.history {
+    background-image: url(assets/images/history.png);
+}
+
+.message {
+    background-image: url(assets/images/message.png);
+}
+
+.setting {
+    background-image: url(assets/images/setting.png);
+}
+
+.sign {
+    background-image: url(assets/images/signin.png);
+}
+/*message上的未读量*/
+.unread{
+    line-height: 22px;/*调整未读数字的位置*/
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+
+    text-align: center;
+    color: white;
+    background-color: red;
+    /*形状*/
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+}
+/*动画*/
+/*首先是所有动画的时间统一*/
+.icon ,#button:hover .icon, #info-bar, #button:hover #info-bar, #button .button,#button:hover .button{
+    transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -webkit-transition-duration:0.8s;
+    transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+}
+/*icon的动画*/
+/*正常*/
+.icon{
+    background: rgb(150, 160, 210) url("assets/images/atplus_white.png") no-repeat center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    position: absolute;
+    left:725px;
+    bottom: 75px;
+}
+/*初始化时的缩小*/
+.icon {
+    transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    background-size: 75%;
+}
+/*当鼠标聚焦时放大并改变*/
+#button:hover .icon{
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    background-image: url(assets/images/atplus_green.png);
+    width: 68px;
+    height: 68px;
+    border-radius: 34px;
+    -moz-border-radius: 34px;
+    -webkit-border-radius: 34px;
+    background-color: rgba(48, 63, 159, 1);
+}
+
+/*info-bar的动画*/
+/*正常info-bar*/
+#info-bar{
+    text-align: center;
+    background-color: gray;
+    width:128px;
+    height: 128px;
+    border-radius: 64px 64px 64px 64px;
+    -moz-border-radius: 64px 64px 64px 64px;
+    -webkit-border-radius: 64px 64px 64px 64px;
+    position: absolute;
+    left:700px;
+    bottom: 70px;
+}
+/*缩小到0 且完全透明*/
+#info-bar{
+    transform: translate(0) scale(0);
+    -moz-transform: translate(0) scale(0);
+    -webkit-transform: translate(0) scale(0);
+    opacity: 0;
+}
+#button:hover #info-bar{
+    transform : translate(0, -75px) scale(1);
+    -moz-transform: translate(0, -75px) scale(1);
+    -webkit-transform: translate(0, -75px) scale(1);
+    opacity: 1;
+}
+/*ring-container的动画*/
+/*正常时透明*/
+#button .button {
+    transform: translate(0) scale(0);
+    -moz-transform: translate(0) scale(0);
+    -webkit-transform: translate(0) scale(0);
+    opacity: 0;
+}
+/*鼠标聚焦时显露*/
+#button:hover .button{
+    opacity: 1;
+}
+/*各个小圆的移动*/
+#button:hover .sign {
+    transform: translate(36px, 55px) scale(1);
+    -moz-transform: translate(36px, 55px) scale(1);
+    -webkit-transform: translate(36px, 55px) scale(1);
+}
+#button:hover .setting {
+    transform: translate(-15px, 70px) scale(1);
+    -moz-transform: translate(-15px, 70px) scale(1);
+    -webkit-transform: translate(-15px, 70px) scale(1);
+}
+#button:hover .message {
+    transform: translate(-62px, 45px) scale(1);
+    -moz-transform: translate(-62px, 45px) scale(1);
+    -webkit-transform: translate(-62px, 45px) scale(1);
+}
+#button:hover .history  {
+    transform: translate(-78px, -4px) scale(1);
+    -moz-transform: translate(-78px, -4px) scale(1);
+    -webkit-transform: translate(-78px, -4px) scale(1);
+}
+#button:hover .mask {
+    transform: translate(-60px, -52px) scale(1);
+    -moz-transform: translate(-60px, -52px) scale(1);
+    -webkit-transform: translate(-60px, -52px) scale(1);
+}
+
+
+
+
+
+
+
+
+
+
